@@ -44,12 +44,21 @@ videoBtn.forEach(btn =>{
     btn.addEventListener('click',() =>{
         document.querySelector('.controls .active').classList.remove('active');
         btn.classList.add('active')
-        let src = btn.getAttribute(' data-src')
+        let src = btn.getAttribute('data-src')
         document.querySelector('#video-slider').src = src;
 
 
     });
 });
+
+function setVid(){
+    btn = getElementById("mybtn1")
+    let src = btn.getAttribute('data-src')
+    console.log(src)
+    cont = document.getElementById("#video-slider")
+    cont.setAttribute("src", src)
+}
+cont = document.getElementById("#video-slider")
 var swiper = new Swiper(".review-slider", {
     spaceBetween:20,
     loop:true,

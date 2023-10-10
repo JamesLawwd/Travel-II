@@ -341,7 +341,7 @@ header .search-bar-container label:hover{
     cursor: pointer;
     margin: 0.5rem;
 
-}
+}vid-btn
 .home .controls .vid-btn .active{
     background: var(--orange);
 }
